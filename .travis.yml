@@ -16,5 +16,13 @@ matrix:
     jdk: oraclejdk8
     script:
       - echo 'skipping tests'
+
+  - language: node_js
+    node_js:
+      - "stable"
+    script:
+      - cd smartron
+      - npm install
+      - npm test
     
 install: true
